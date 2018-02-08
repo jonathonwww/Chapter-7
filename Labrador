@@ -1,0 +1,40 @@
+/**
+ * A class derived from Dog that holds information about
+ * a labrador retriever. Overrides Dog speak method and includes
+ * information about avg weight for this breed.
+ * 
+ * @author Jonathon Webster
+ * @version 2/8/18
+ */
+public class Labrador extends Dog
+{
+    private String color; //black, yellow, or chocolate?
+    private int breedWeight = 75;
+    /**
+     * Constructor that sets the color and name of dog
+     * @param name
+     * @param color
+     */
+    public Labrador(String name, String color)
+    {
+        super(name);
+        this.color = color;
+    }
+   /**
+    * Big bark -- overrides speak method in Dog
+    * @return "BOW WOW"
+    */
+    public String speak()
+    {
+        return "BOW WOW";
+    }
+    // ------------------------------------------------------------
+    // Returns weight
+    // ------------------------------------------------------------
+    /*
+    public int avgBreedWeight()
+    {
+    return breedWeight;
+    }
+     */
+}
