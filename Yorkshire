@@ -1,0 +1,22 @@
+/**
+ * A class derived from Dog that holds information about 
+ * a Yorkshire terrier. Overrides Dog speak method.
+ * 
+ * @author Jonathon Webster
+ * @version 2/8/18
+ */
+public class Yorkshire extends Dog
+{
+    public Yorkshire(String name)
+    {
+        super(name);
+    }
+   /**
+    * Small bark -- overrides speak method in Dog
+    * @return "yap yap"
+    */
+    public String speak()
+    {
+        return "yap yap";
+    }
+}
