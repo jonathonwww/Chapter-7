@@ -7,6 +7,11 @@
  */
 public class Yorkshire extends Dog
 {
+    private int breedWeight = 35;
+    /**
+     * Constructor that sets the name
+     * @param name
+     */
     public Yorkshire(String name)
     {
         super(name);
@@ -19,4 +24,14 @@ public class Yorkshire extends Dog
     {
         return "yap yap";
     }
+    
+    /**
+     * This returns the average breed weight
+     * @return breedWeight
+     */
+    public int avgBreedWeight()
+    {
+       return breedWeight;
+    }
+    
 }
