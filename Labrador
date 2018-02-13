@@ -28,13 +28,13 @@ public class Labrador extends Dog
     {
         return "BOW WOW";
     }
-    // ------------------------------------------------------------
-    // Returns weight
-    // ------------------------------------------------------------
-    /*
+    /**
+     * This returns the breed's average weight
+     * @return breedWeight
+     */
     public int avgBreedWeight()
     {
     return breedWeight;
     }
-     */
+     
 }
