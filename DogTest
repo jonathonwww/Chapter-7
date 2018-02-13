@@ -1,33 +1,17 @@
-
 /**
- * Write a description of class DogTest here.
- * 
- * @author Jonathon Webster 
- * @version 2/8/18
+ * This prints out info about the labrador and the yorkshire
+ * @author Jonathon Webster
+ * @version 2/13/18
  */
-public class DogTest
-{
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class DogTest
-     */
-    public DogTest()
-    {
-        // initialise instance variables
-        x = 0;
-    }
-
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+public class DogTest {
+    
+    public static void main(String[] args) {
+        
+        Labrador lab = new Labrador( "Lab", "Yellow");
+        Yorkshire york = new Yorkshire("York");
+        System.out.println("\f" + lab.getName() + " speaks " + lab.speak());
+        System.out.println(york.getName() + " speaks " + york.speak());
+        System.out.println("Yorkshire average weight: " + york.avgBreedWeight());
+        System.out.println("Labrador average weight: " + lab.avgBreedWeight());
     }
 }
