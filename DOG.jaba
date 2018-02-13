@@ -3,7 +3,7 @@
  * @author Jonathon Webster
  * @version 2/8/18
  */
-public class Dog
+public abstract class Dog
 {
     private String name;
     /**
@@ -32,4 +32,9 @@ public class Dog
     {
         return "woof";
     }
+    
+    /**
+     * an abstract method
+     */
+    public abstract int avgBreedWeight();
 }
