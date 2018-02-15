@@ -1,0 +1,37 @@
+/**
+ * This gives the employee a commission
+ * @author Jonathon Webster
+ * @version 2/15/18
+ */
+public class Commission extends Hourly{
+
+    private double totalSales=0;
+    private double commRate;
+    /**
+     * this 
+     */
+    public Commission (String eName, String eAddress, String ePhone,
+    String socSecNumber, double rate, double comRate) {
+        super (eName,eAddress,ePhone, socSecNumber, rate);
+        commRate = comRate;
+    }
+
+    /**
+     * this updates the total number of sales
+     * @param tSales
+     */
+    public void addSales(double tSales) {
+        totalSales += tSales;
+    }
+
+    /**
+     * this returns the total amount of money an employee
+     * should make
+     * @return x
+     */
+    public double pay(){
+        double x = super.pay() + (commRate*totalSales);
+        totalSales = 0;
+        return x;
+    }
+}
