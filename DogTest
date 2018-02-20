@@ -1,5 +1,6 @@
 /**
- * This prints out info about the labrador and the yorkshire
+ * This uses the different dog classes to print
+ * out things on the screen
  * @author Jonathon Webster
  * @version 2/13/18
  */
@@ -7,8 +8,8 @@ public class DogTest {
     
     public static void main(String[] args) {
         
-        Labrador lab = new Labrador( "Lab", "Yellow");
-        Yorkshire york = new Yorkshire("York");
+        Dog lab = new Labrador( "Lab", "Yellow");
+        Dog york = new Yorkshire("York");
         System.out.println("\f" + lab.getName() + " speaks " + lab.speak());
         System.out.println(york.getName() + " speaks " + york.speak());
         System.out.println("Yorkshire average weight: " + york.avgBreedWeight());
